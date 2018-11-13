@@ -1,0 +1,198 @@
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m
+
+Failures:
+
+  1) methods.rb my_lcm correctly computes the lcm of two numbers
+     [31mFailure/Error: expect(my_lcm(18, 0)).to be(0)[0m
+     [31m[0m
+     [31m  expected #<Integer:1> => 0[0m
+     [31m       got #<NilClass:8> => nil[0m
+     [31m[0m
+     [31m  Compared using equal?, which compares object identity,[0m
+     [31m  but expected and actual are not the same object. Use[0m
+     [31m  `expect(actual).to eq(expected)` if you don't care about[0m
+     [31m  object identity in this example.[0m
+     [36m# ./spec/methods_spec.rb:40:in `block (3 levels) in <top (required)>'[0m
+
+  2) methods.rb to_stringified_float converts 1 to "1.0"
+     [31mFailure/Error: expect(to_stringified_float(1)).to eq("1.0")[0m
+     [31m[0m
+     [31m  expected: "1.0"[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:49:in `block (3 levels) in <top (required)>'[0m
+
+  3) methods.rb absolute_sum computes the sum of the absolute values of two positive numbers
+     [31mFailure/Error: expect(absolute_sum(2, 3)).to eq(5)[0m
+     [31m[0m
+     [31m  expected: 5[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:55:in `block (3 levels) in <top (required)>'[0m
+
+  4) methods.rb absolute_sum computes the sum of the absolute values of two negative numbers
+     [31mFailure/Error: expect(absolute_sum(-2, -3)).to eq(5)[0m
+     [31m[0m
+     [31m  expected: 5[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:59:in `block (3 levels) in <top (required)>'[0m
+
+  5) methods.rb absolute_sum computes the sum of the absolute values mixed parity numbers
+     [31mFailure/Error: expect(absolute_sum(-2, 3)).to eq(5)[0m
+     [31m[0m
+     [31m  expected: 5[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:63:in `block (3 levels) in <top (required)>'[0m
+
+  6) methods.rb negative turns a positive number negative
+     [31mFailure/Error: expect(negative(5)).to eq(-5)[0m
+     [31m[0m
+     [31m  expected: -5[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:69:in `block (3 levels) in <top (required)>'[0m
+
+  7) methods.rb negative keeps a negative number negative
+     [31mFailure/Error: expect(negative(-5)).to eq(-5)[0m
+     [31m[0m
+     [31m  expected: -5[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:73:in `block (3 levels) in <top (required)>'[0m
+
+  8) methods.rb last_digit returns the last digit of 2
+     [31mFailure/Error: expect(last_digit(2)).to eq 2[0m
+     [31m[0m
+     [31m  expected: 2[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:79:in `block (3 levels) in <top (required)>'[0m
+
+  9) methods.rb last_digit returns the last digit of 159293
+     [31mFailure/Error: expect(last_digit(159293)).to eq 3[0m
+     [31m[0m
+     [31m  expected: 3[0m
+     [31m       got: nil[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/methods_spec.rb:83:in `block (3 levels) in <top (required)>'[0m
+
+  10) methods.rb last_digit_odd? returns true given 25
+      [31mFailure/Error: expect(last_digit_odd?(25)).to be true[0m
+      [31m[0m
+      [31m  expected true[0m
+      [31m       got nil[0m
+      [36m# ./spec/methods_spec.rb:89:in `block (3 levels) in <top (required)>'[0m
+
+  11) methods.rb last_digit_odd? returns true given 25
+      [31mFailure/Error: expect(last_digit_odd?(52)).to be false[0m
+      [31m[0m
+      [31m  expected false[0m
+      [31m       got nil[0m
+      [36m# ./spec/methods_spec.rb:93:in `block (3 levels) in <top (required)>'[0m
+
+  12) methods.rb gcd_of_last_digits works on 18 and 36
+      [31mFailure/Error: expect(gcd_of_last_digits(18, 36)).to eq(2)[0m
+      [31m[0m
+      [31m  expected: 2[0m
+      [31m       got: nil[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/methods_spec.rb:99:in `block (3 levels) in <top (required)>'[0m
+
+  13) methods.rb gcd_of_last_digits works on 5 and 27
+      [31mFailure/Error: expect(gcd_of_last_digits(5, 27)).to eq(1)[0m
+      [31m[0m
+      [31m  expected: 1[0m
+      [31m       got: nil[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/methods_spec.rb:103:in `block (3 levels) in <top (required)>'[0m
+
+  14) methods.rb last_n_digits returns that last digit of a number
+      [31mFailure/Error: expect(last_n_digits(12345, 1)).to eq 5[0m
+      [31m[0m
+      [31m  expected: 5[0m
+      [31m       got: nil[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/methods_spec.rb:109:in `block (3 levels) in <top (required)>'[0m
+
+  15) methods.rb last_n_digits returns that last several digits of a number
+      [31mFailure/Error: expect(last_n_digits(12345, 2)).to eq 45[0m
+      [31m[0m
+      [31m  expected: 45[0m
+      [31m       got: nil[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/methods_spec.rb:113:in `block (3 levels) in <top (required)>'[0m
+
+  16) methods.rb dec_remainder_of_two_floats calculates the decimal part of the remainder of two floats
+      [31mFailure/Error: expect(dec_remainder_of_two_floats(8.0, 5.0).round(2)).to eq(0.6)[0m
+      [31m[0m
+      [31mNoMethodError:[0m
+      [31m  undefined method `round' for nil:NilClass[0m
+      [36m# ./spec/methods_spec.rb:120:in `block (3 levels) in <top (required)>'[0m
+
+  17) methods.rb dec_remainder_of_two_integers calculates the decimal part of the remainder of two ints
+      [31mFailure/Error: expect(dec_remainder_of_two_integers(8, 5).round(2)).to eq(0.6)[0m
+      [31m[0m
+      [31mNoMethodError:[0m
+      [31m  undefined method `round' for nil:NilClass[0m
+      [36m# ./spec/methods_spec.rb:127:in `block (3 levels) in <top (required)>'[0m
+
+  18) methods.rb int_remainder_without_modulo knows 8 mod 3 is 2
+      [31mFailure/Error: expect(int_remainder_without_modulo(8, 3)).to be(2)[0m
+      [31m[0m
+      [31m  expected #<Integer:5> => 2[0m
+      [31m       got #<NilClass:8> => nil[0m
+      [31m[0m
+      [31m  Compared using equal?, which compares object identity,[0m
+      [31m  but expected and actual are not the same object. Use[0m
+      [31m  `expect(actual).to eq(expected)` if you don't care about[0m
+      [31m  object identity in this example.[0m
+      [36m# ./spec/methods_spec.rb:134:in `block (3 levels) in <top (required)>'[0m
+
+  19) methods.rb int_remainder_without_modulo knows 5 mod 6 is 5
+      [31mFailure/Error: expect(int_remainder_without_modulo(5, 6)).to eq(5)[0m
+      [31m[0m
+      [31m  expected: 5[0m
+      [31m       got: nil[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/methods_spec.rb:138:in `block (3 levels) in <top (required)>'[0m
+
+Finished in 0.08754 seconds (files took 0.53818 seconds to load)
+[31m27 examples, 19 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/methods_spec.rb:39[0m [36m# methods.rb my_lcm correctly computes the lcm of two numbers[0m
+[31mrspec ./spec/methods_spec.rb:48[0m [36m# methods.rb to_stringified_float converts 1 to "1.0"[0m
+[31mrspec ./spec/methods_spec.rb:54[0m [36m# methods.rb absolute_sum computes the sum of the absolute values of two positive numbers[0m
+[31mrspec ./spec/methods_spec.rb:58[0m [36m# methods.rb absolute_sum computes the sum of the absolute values of two negative numbers[0m
+[31mrspec ./spec/methods_spec.rb:62[0m [36m# methods.rb absolute_sum computes the sum of the absolute values mixed parity numbers[0m
+[31mrspec ./spec/methods_spec.rb:68[0m [36m# methods.rb negative turns a positive number negative[0m
+[31mrspec ./spec/methods_spec.rb:72[0m [36m# methods.rb negative keeps a negative number negative[0m
+[31mrspec ./spec/methods_spec.rb:78[0m [36m# methods.rb last_digit returns the last digit of 2[0m
+[31mrspec ./spec/methods_spec.rb:82[0m [36m# methods.rb last_digit returns the last digit of 159293[0m
+[31mrspec ./spec/methods_spec.rb:88[0m [36m# methods.rb last_digit_odd? returns true given 25[0m
+[31mrspec ./spec/methods_spec.rb:92[0m [36m# methods.rb last_digit_odd? returns true given 25[0m
+[31mrspec ./spec/methods_spec.rb:98[0m [36m# methods.rb gcd_of_last_digits works on 18 and 36[0m
+[31mrspec ./spec/methods_spec.rb:102[0m [36m# methods.rb gcd_of_last_digits works on 5 and 27[0m
+[31mrspec ./spec/methods_spec.rb:108[0m [36m# methods.rb last_n_digits returns that last digit of a number[0m
+[31mrspec ./spec/methods_spec.rb:112[0m [36m# methods.rb last_n_digits returns that last several digits of a number[0m
+[31mrspec ./spec/methods_spec.rb:119[0m [36m# methods.rb dec_remainder_of_two_floats calculates the decimal part of the remainder of two floats[0m
+[31mrspec ./spec/methods_spec.rb:126[0m [36m# methods.rb dec_remainder_of_two_integers calculates the decimal part of the remainder of two ints[0m
+[31mrspec ./spec/methods_spec.rb:133[0m [36m# methods.rb int_remainder_without_modulo knows 8 mod 3 is 2[0m
+[31mrspec ./spec/methods_spec.rb:137[0m [36m# methods.rb int_remainder_without_modulo knows 5 mod 6 is 5[0m
+
